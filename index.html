@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ Суши</title>
+    <link rel="stylesheet" href="wwwroot/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Форма заказа суши</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Адрес</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Телефон</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="chopsticks-quantity" class="form-label">Количество палочек</label>
+                <input type="number" class="form-control" id="chopsticks-quantity" min="1" required>
+            </div>
+            <div class="mb-3">
+                <label for="chopsticks-type" class="form-label">Вид палочек</label>
+                <select class="form-select" id="chopsticks-type" required>
+                    <option value="обычные">Обычные</option>
+                    <option value="учебные">Учебные</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="sushi-selection" class="form-label">Выбор суши</label>
+                <select class="selectpicker form-select" id="sushi-selection" multiple data-live-search="true" required>
+                    <option value="филадельфия">Филадельфия</option>
+                    <option value="калифорния">Калифорния</option>
+                    <option value="спайси тунец">Спайси тунец</option>
+                    <option value="эби маки">Эби маки</option>
+                    <option value="унатама маки">Унатама сасаки</option>
+                </select>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="napkins">
+                <label class="form-check-label" for="napkins">Класть салфетки</label>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Дополнительные комментарии</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Заказать</button>
+                <a href="index2.html" class="btn btn-secondary">Перейти на другую страницу</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

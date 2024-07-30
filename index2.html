@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация в игре</title>
+    <link rel="stylesheet" href="wwwroot/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Регистрация в онлайновой игре</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nickname" class="form-label">Ник</label>
+                <input type="text" class="form-control" id="nickname" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="birthdate" class="form-label">Дата рождения</label>
+                <input type="date" class="form-control" id="birthdate" required>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Пол</label>
+                <select class="form-select" id="gender" required>
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other">Другой</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label">Страна</label>
+                <select class="selectpicker form-control" id="country" data-live-search="true" required>
+                    <option value="Россия">Россия</option>
+                    <option value="Украина">Украина</option>
+                    <option value="Беларусь">Беларусь</option>
+                    <option value="США">США</option>
+                    <option value="Китай">Китай</option>
+                    <option value="Япония">Япония</option>
+                    <option value="Германия">Германия</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="hero-type" class="form-label">Тип героя</label>
+                <select class="form-select" id="hero-type" required>
+                    <option value="warrior">Гетто-ящер</option>
+                    <option value="mage">Госник</option>
+                    <option value="archer">Фармила</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="experience" class="form-label">Игровой опыт (от 0 до 60)</label>
+                <input type="number" class="form-control" id="experience" min="0" max="60" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+    </div>
+  
+</body>
+</html>
